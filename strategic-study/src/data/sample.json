@@ -1,19 +1,511 @@
 {
+  "tldr": [],
+  "takeaways": [],
+  "concepts": [
+    {
+      "term": "Visualization in strategy",
+      "definition": "Using graphics to improve cognition, coordination, engagement",
+      "related_frameworks": [
+        "SWOT",
+        "Five Forces",
+        "BCG Matrix"
+      ]
+    },
+    {
+      "term": "Strategic inflection point",
+      "definition": "A radical shift in business fundamentals",
+      "related_frameworks": [
+        "Intel",
+        "Andy Grove"
+      ]
+    },
+    {
+      "term": "Paranoid leadership",
+      "definition": "Leadership style focused on anticipating threats",
+      "related_frameworks": [
+        "Intel",
+        "Only the Paranoid Survive"
+      ]
+    },
+    {
+      "term": "Brand definition model",
+      "definition": "Framework to define brand essence and meaning",
+      "related_frameworks": [
+        "Interbrand"
+      ]
+    },
+    {
+      "term": "Brand experience model",
+      "definition": "Framework for mapping customer touchpoints",
+      "related_frameworks": [
+        "Interbrand"
+      ]
+    },
+    {
+      "term": "Digital DTC shift",
+      "definition": "Nike’s move from wholesale to direct-to-consumer",
+      "related_frameworks": [
+        "Retail strategy"
+      ]
+    },
+    {
+      "term": "Purpose-driven branding",
+      "definition": "Aligning brand with social justice",
+      "related_frameworks": [
+        "Nike"
+      ]
+    },
+    {
+      "term": "Distributed media strategy",
+      "definition": "Publishing natively across multiple platforms",
+      "related_frameworks": [
+        "BuzzFeed"
+      ]
+    },
+    {
+      "term": "Learning-driven culture",
+      "definition": "Feedback loop of data, learning, dollars",
+      "related_frameworks": [
+        "BuzzFeed"
+      ]
+    },
+    {
+      "term": "Growth & Strategy Council",
+      "definition": "Corning’s central innovation governance body",
+      "related_frameworks": [
+        "Innovation portfolio"
+      ]
+    },
+    {
+      "term": "Resilience through reinvention",
+      "definition": "Reinvention across decades for survival",
+      "related_frameworks": [
+        "Corning"
+      ]
+    },
+    {
+      "term": "Cross-cultural leadership",
+      "definition": "Leveraging diversity for transformation",
+      "related_frameworks": [
+        "Nissan-Renault"
+      ]
+    },
+    {
+      "term": "Turnaround leadership",
+      "definition": "Reviving failing company into profitability",
+      "related_frameworks": [
+        "Nissan"
+      ]
+    },
+    {
+      "term": "Governance failure",
+      "definition": "Weak board culture causing collapse",
+      "related_frameworks": [
+        "Credit Suisse"
+      ]
+    },
+    {
+      "term": "Stakeholder mining 2.0",
+      "definition": "Using social media analytics to identify influencers",
+      "related_frameworks": [
+        "ICRC"
+      ]
+    }
+  ],
+  "framework_links": [],
+  "examples": [],
+  "exam_questions": [],
+  "spaced_plan": [
+    {
+      "date": "2025-08-26",
+      "topics": [
+        "Key concepts",
+        "Flashcards"
+      ]
+    },
+    {
+      "date": "2025-08-27",
+      "topics": [
+        "Cloze deletions",
+        "Andy Grove",
+        "Visualization",
+        "Nike"
+      ]
+    },
+    {
+      "date": "2025-08-29",
+      "topics": [
+        "MCQs 1–5"
+      ]
+    },
+    {
+      "date": "2025-09-02",
+      "topics": [
+        "Mini cases 1–3"
+      ]
+    },
+    {
+      "date": "2025-09-09",
+      "topics": [
+        "MCQs 6–10",
+        "Cloze review"
+      ]
+    },
+    {
+      "date": "2025-09-25",
+      "topics": [
+        "Full simulation",
+        "All cases interactive"
+      ]
+    }
+  ],
   "flashcards": [
-    { "id": "f1", "question": "What is strategy?", "answer": "Choices about where to play and how to win.", "tags": ["core"] }
+    {
+      "id": "f1",
+      "question": "What is a strategic inflection point?",
+      "answer": "A moment when a business’s fundamentals change dramatically.",
+      "tags": [
+        "Intel",
+        "Andy Grove"
+      ]
+    },
+    {
+      "id": "f2",
+      "question": "Andy Grove’s motto for leadership?",
+      "answer": "Only the paranoid survive.",
+      "tags": [
+        "Intel"
+      ]
+    },
+    {
+      "id": "f3",
+      "question": "What does visualization solve in strategy?",
+      "answer": "Cognitive overload, misalignment, lack of engagement.",
+      "tags": [
+        "Visualization"
+      ]
+    },
+    {
+      "id": "f4",
+      "question": "Name Interbrand’s two main brand frameworks.",
+      "answer": "Brand definition model & brand experience model.",
+      "tags": [
+        "Interbrand"
+      ]
+    },
+    {
+      "id": "f5",
+      "question": "Why did Nike pivot to digital retail?",
+      "answer": "To control customer relationships and adapt to e-commerce.",
+      "tags": [
+        "Nike"
+      ]
+    },
+    {
+      "id": "f6",
+      "question": "Nike’s risk in social justice branding?",
+      "answer": "Criticism if actions don’t match messages.",
+      "tags": [
+        "Nike"
+      ]
+    },
+    {
+      "id": "f7",
+      "question": "What’s BuzzFeed’s growth loop called?",
+      "answer": "Data → Learning → Dollars.",
+      "tags": [
+        "BuzzFeed"
+      ]
+    },
+    {
+      "id": "f8",
+      "question": "Why publish directly on platforms (BuzzFeed)?",
+      "answer": "Reach users where they already consume content.",
+      "tags": [
+        "BuzzFeed"
+      ]
+    },
+    {
+      "id": "f9",
+      "question": "What is Corning’s Growth & Strategy Council?",
+      "answer": "Central forum allocating innovation resources.",
+      "tags": [
+        "Corning"
+      ]
+    },
+    {
+      "id": "f10",
+      "question": "What principle saved Nissan under Ghosn?",
+      "answer": "Urgency + cross-cultural leadership.",
+      "tags": [
+        "Nissan"
+      ]
+    },
+    {
+      "id": "f11",
+      "question": "What cultural view did Ghosn promote?",
+      "answer": "Diversity as catalyst, not crutch.",
+      "tags": [
+        "Nissan"
+      ]
+    },
+    {
+      "id": "f12",
+      "question": "What sank Credit Suisse?",
+      "answer": "Weak governance and repeated risk failures.",
+      "tags": [
+        "Credit Suisse"
+      ]
+    },
+    {
+      "id": "f13",
+      "question": "What is stakeholder mining?",
+      "answer": "Identifying key actors influencing outcomes.",
+      "tags": [
+        "ICRC"
+      ]
+    },
+    {
+      "id": "f14",
+      "question": "Why use social media analytics in crisis?",
+      "answer": "Detect hidden influencers and improve legitimacy.",
+      "tags": [
+        "ICRC"
+      ]
+    },
+    {
+      "id": "f15",
+      "question": "Example of visualization tool for analysis stage?",
+      "answer": "SWOT matrix or Porter’s Five Forces.",
+      "tags": [
+        "Visualization"
+      ]
+    }
   ],
   "cloze": [
-    { "id": "c1", "text": "Porter's Five Forces scans industry ___.", "answer": "structure and power dynamics" }
+    {
+      "id": "c1",
+      "text": "Andy Grove coined the term __ to describe radical shifts in business fundamentals.",
+      "answer": "strategic inflection point"
+    },
+    {
+      "id": "c2",
+      "text": "Visualization helps managers overcome __ overload in strategic planning.",
+      "answer": "information"
+    },
+    {
+      "id": "c3",
+      "text": "Interbrand uses the __ and __ models for brand strategy.",
+      "answer": "brand definition; brand experience"
+    },
+    {
+      "id": "c4",
+      "text": "Nike shifted away from __ stores to focus on digital direct-to-consumer.",
+      "answer": "wholesale"
+    },
+    {
+      "id": "c5",
+      "text": "BuzzFeed’s success loop is summarized as “__ – Learning – Dollars.”",
+      "answer": "Data"
+    },
+    {
+      "id": "c6",
+      "text": "Corning’s __ Council centrally managed innovation.",
+      "answer": "Growth & Strategy"
+    },
+    {
+      "id": "c7",
+      "text": "Carlos Ghosn saw __ differences as catalysts, not barriers.",
+      "answer": "cultural"
+    },
+    {
+      "id": "c8",
+      "text": "Credit Suisse failed due to weak __ culture at board level.",
+      "answer": "governance"
+    },
+    {
+      "id": "c9",
+      "text": "The ICRC used __ analytics to detect unexpected stakeholders.",
+      "answer": "social media"
+    },
+    {
+      "id": "c10",
+      "text": "Visualization creates emotional benefits like __ and __.",
+      "answer": "engagement; inspiration"
+    }
   ],
   "mcq": [
-    { "id": "m1", "question": "Which framework is best for crowded markets with price wars?", "options": ["SWOT", "Blue Ocean", "PESTLE"], "answer": "Blue Ocean", "explanation": "It creates uncontested market space." }
+    {
+      "id": "m1",
+      "question": "What is a strategic inflection point?",
+      "options": [
+        "Minor market fluctuation",
+        "A radical change in business fundamentals",
+        "A cost-cutting program",
+        "A short-term trend"
+      ],
+      "answer": "A radical change in business fundamentals",
+      "explanation": "Andy Grove defined this as a time when a company must adapt or fail."
+    },
+    {
+      "id": "m2",
+      "question": "Which benefit does visualization NOT provide?",
+      "options": [
+        "Improved recall",
+        "Better coordination",
+        "Increased profit margins",
+        "Engagement"
+      ],
+      "answer": "Increased profit margins",
+      "explanation": "Visualization aids cognition, social alignment, and engagement—not direct profit."
+    },
+    {
+      "id": "m3",
+      "question": "Nike’s digital pivot aimed to:",
+      "options": [
+        "Reduce manufacturing costs",
+        "Own customer relationships",
+        "Exit footwear market",
+        "Compete only with Adidas"
+      ],
+      "answer": "Own customer relationships",
+      "explanation": "Nike wanted direct digital consumer access instead of relying on wholesalers."
+    },
+    {
+      "id": "m4",
+      "question": "BuzzFeed’s distributed strategy meant:",
+      "options": [
+        "Publishing mainly on its website",
+        "Publishing natively across platforms",
+        "Avoiding video content",
+        "Blocking data analytics"
+      ],
+      "answer": "Publishing natively across platforms",
+      "explanation": "Peretti pushed to post directly where audiences were active."
+    },
+    {
+      "id": "m5",
+      "question": "Corning’s Growth & Strategy Council focused on:",
+      "options": [
+        "Daily operations",
+        "Innovation resource allocation",
+        "Sales campaigns",
+        "Employee training"
+      ],
+      "answer": "Innovation resource allocation",
+      "explanation": "The GSC guided investments across risky innovation portfolios."
+    },
+    {
+      "id": "m6",
+      "question": "Carlos Ghosn’s turnaround emphasized:",
+      "options": [
+        "Short-term share price",
+        "Cross-cultural urgency",
+        "Avoiding restructuring",
+        "Centralized dictatorship"
+      ],
+      "answer": "Cross-cultural urgency",
+      "explanation": "He created urgency while using cultural diversity positively."
+    },
+    {
+      "id": "m7",
+      "question": "What drove Credit Suisse’s collapse?",
+      "options": [
+        "Consumer boycotts",
+        "Weak board governance & risk failures",
+        "Competitor M&A",
+        "Loss of brand recognition"
+      ],
+      "answer": "Weak board governance & risk failures",
+      "explanation": "Repeated scandals and poor governance eroded trust."
+    },
+    {
+      "id": "m8",
+      "question": "ICRC’s stakeholder mining 2.0 relies on:",
+      "options": [
+        "Lobbying governments",
+        "Social media analytics",
+        "Traditional surveys",
+        "Media advertising"
+      ],
+      "answer": "Social media analytics",
+      "explanation": "They used Twitter and digital data to detect key actors."
+    },
+    {
+      "id": "m9",
+      "question": "Interbrand’s visual methods aimed to:",
+      "options": [
+        "Replace consultants",
+        "Improve client understanding",
+        "Cut costs",
+        "Automate design"
+      ],
+      "answer": "Improve client understanding",
+      "explanation": "Visuals improved collaboration and buy-in with clients."
+    },
+    {
+      "id": "m10",
+      "question": "Visualization at analysis stage includes:",
+      "options": [
+        "Financial modeling only",
+        "SWOT, 2x2 matrices, Five Forces",
+        "Legal compliance audits",
+        "HR policy diagrams"
+      ],
+      "answer": "SWOT, 2x2 matrices, Five Forces",
+      "explanation": "Visual tools structure and synthesize data for analysis."
+    }
   ],
   "mini_cases": [
     {
-      "id": "case1",
-      "scenario": "A new marketplace startup struggles with chicken-and-egg dynamics.",
-      "question": "What should they prioritize first?",
-      "solution_steps": ["Seed supply side", "Offer subsidies", "Narrow niche before scaling"]
+      "id": "mc1",
+      "scenario": "Global brand project; clients disengaged.",
+      "question": "What visualization approach could you use?",
+      "solution_steps": [
+        "Select brand definition/experience models",
+        "Use interactive sketching",
+        "Integrate storytelling visuals"
+      ]
+    },
+    {
+      "id": "mc2",
+      "scenario": "Intel faces disruptive new chip architecture.",
+      "question": "What would Andy Grove do?",
+      "solution_steps": [
+        "Recognize inflection point",
+        "Test assumptions openly",
+        "Adapt quickly"
+      ]
+    },
+    {
+      "id": "mc3",
+      "scenario": "Nike faces backlash on social justice vs. culture.",
+      "question": "How should Nike respond?",
+      "solution_steps": [
+        "Audit internal culture vs. message",
+        "Align HR with brand values",
+        "Communicate transparently"
+      ]
+    },
+    {
+      "id": "mc4",
+      "scenario": "Corning must pick among 4 risky innovations.",
+      "question": "How does GSC decide?",
+      "solution_steps": [
+        "Evaluate strategic fit",
+        "Balance long-term returns",
+        "Allocate via council review"
+      ]
+    },
+    {
+      "id": "mc5",
+      "scenario": "ICRC discovers hidden militia influencer.",
+      "question": "How to adjust strategy?",
+      "solution_steps": [
+        "Engage via analytics",
+        "Map influencers",
+        "Adapt communication for neutrality"
+      ]
     }
   ]
 }
