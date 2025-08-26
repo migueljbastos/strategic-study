@@ -244,5 +244,138 @@ function PlanView({ items }: { items: Spaced[] }) {
   )
 }
 
-/* ---------------- Existing Views (Flashcards etc.) ---------------- */
-// (reuse your current FlashcardView, ClozeView, MCQView, CaseView here – unchanged)
+/* ---------------- Interactive Views ---------------- */
+
+function FlashcardView({ cards }: { cards: Flashcard[] }) {
+  const [i, setI] = useState(0)
+  const [reveal, setReveal] = useState(false)
+  const c = cards[i]
+  if (!c) return <p>No flashcards loaded.</p>
+
+  return (
+    <Section title="Flashcards">
+      <p className="text-sm text-gray-500">Card {i + 1} / {cards.length}</p>
+      <h3 className="mt-2 font-semibold">{c.question}</h3>
+      {reveal && <p className="mt-2 text-gray-800">{c.answer}</p>}
+      <div className="mt-4 flex gap-2">
+        <button className="btn" onClick={() => setReveal(!reveal)}>
+          {reveal ? "Hide" : "Reveal"}
+        </button>
+        <button className="btn" onClick={() => { setI(Math.max(0, i - 1)); setReveal(false) }}>
+          Prev
+        </button>
+        <button className="btn" onClick={() => { setI(Math.min(cards.length - 1, i + 1)); setReveal(false) }}>
+          Next
+        </button>
+      </div>
+    </Section>
+  )
+}
+
+function ClozeView({ cards }: { cards: Cloze[] }) {
+  const [i, setI] = useState(0)
+  const [reveal, setReveal] = useState(false)
+  const c = cards[i]
+  if (!c) return <p>No cloze cards loaded.</p>
+
+  return (
+    <Section title="Cloze Practice">
+      <p className="text-sm text-gray-500">Item {i + 1} / {cards.length}</p>
+      <p className="mt-2 text-gray-800">{c.text}</p>
+      {reveal && <p className="mt-2 text-green-700">Answer: {c.answer}</p>}
+      <div className="mt-4 flex gap-2">
+        <button className="btn" onClick={() => setReveal(!reveal)}>
+          {reveal ? "Hide" : "Reveal"}
+        </button>
+        <button className="btn" onClick={() => { setI(Math.max(0, i - 1)); setReveal(false) }}>
+          Prev
+        </button>
+        <button className="btn" onClick={() => { setI(Math.min(cards.length - 1, i + 1)); setReveal(false) }}>
+          Next
+        </button>
+      </div>
+    </Section>
+  )
+}
+
+function MCQView({ cards }: { cards: MCQ[] }) {
+  const [i, setI] = useState(0)
+  const [selected, setSelected] = useState<string | null>(null)
+  const c = cards[i]
+  if (!c) return <p>No MCQs loaded.</p>
+
+  return (
+    <Section title="Multiple Choice">
+      <p className="text-sm text-gray-500">Q {i + 1} / {cards.length}</p>
+      <p className="mt-2 font-medium">{c.question}</p>
+      <div className="mt-2 space-y-2">
+        {c.options.map((opt, j) => {
+          const isCorrect = opt === c.answer
+          const chosen = selected === opt
+          return (
+            <button
+              key={j}
+              className={`btn w-full justify-start ${chosen ? (isCorrect ? "bg-green-200" : "bg-red-200") : ""}`}
+              onClick={() => setSelected(opt)}
+            >
+              {opt}
+            </button>
+          )
+        })}
+      </div>
+      {selected && (
+        <p className="mt-3 text-sm text-gray-700">
+          {selected === c.answer ? "✅ Correct! " : "❌ Incorrect. "}
+          {c.explanation}
+        </p>
+      )}
+      <div className="mt-4 flex gap-2">
+        <button className="btn" onClick={() => { setI(Math.max(0, i - 1)); setSelected(null) }}>
+          Prev
+        </button>
+        <button className="btn" onClick={() => { setI(Math.min(cards.length - 1, i + 1)); setSelected(null) }}>
+          Next
+        </button>
+      </div>
+    </Section>
+  )
+}
+
+function CaseView({ cases }: { cases: MiniCase[] }) {
+  const [i, setI] = useState(0)
+  const [answer, setAnswer] = useState("")
+  const [show, setShow] = useState(false)
+  const c = cases[i]
+  if (!c) return <p>No cases loaded.</p>
+
+  return (
+    <Section title="Mini Case">
+      <p className="text-sm text-gray-500">Case {i + 1} / {cases.length}</p>
+      <p className="mt-2">{c.scenario}</p>
+      <p className="mt-2 font-medium">{c.question}</p>
+      <textarea
+        className="textarea mt-3"
+        placeholder="Type your answer..."
+        value={answer}
+        onChange={(e) => setAnswer(e.target.value)}
+      />
+      <button className="btn mt-3" onClick={() => setShow(true)}>Submit</button>
+      {show && (
+        <div className="mt-4 bg-gray-50 border rounded-xl p-4">
+          <h4 className="font-semibold">Suggested Solution:</h4>
+          <ul className="list-disc list-inside">
+            {c.solution_steps.map((s, j) => <li key={j}>{s}</li>)}
+          </ul>
+        </div>
+      )}
+      <div className="mt-4 flex gap-2">
+        <button className="btn" onClick={() => { setI(Math.max(0, i - 1)); setAnswer(""); setShow(false) }}>
+          Prev
+        </button>
+        <button className="btn" onClick={() => { setI(Math.min(cases.length - 1, i + 1)); setAnswer(""); setShow(false) }}>
+          Next
+        </button>
+      </div>
+    </Section>
+  )
+}
