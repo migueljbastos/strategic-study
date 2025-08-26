@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Helpers */
+.card {
+  @apply bg-white rounded-2xl shadow-sm border border-gray-200;
+}
+.card-body {
+  @apply p-6;
+}
+.btn {
+  @apply inline-flex items-center justify-center px-4 py-2 rounded-xl border border-gray-300 shadow-sm hover:shadow transition;
+}
+.btn-primary {
+  @apply bg-gray-900 text-white border-gray-900;
+}
+.btn-ghost {
+  @apply border-transparent;
+}
+.input, .textarea, .select {
+  @apply w-full rounded-xl border border-gray-300 p-3 focus:outline-none focus:ring-2 focus:ring-gray-900/20;
+}
+.kicker {
+  @apply uppercase tracking-wider text-xs text-gray-500;
+}
