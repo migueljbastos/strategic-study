@@ -1,172 +1,19 @@
 {
-  "tldr": "Strategy clarifies where to play and how to win by aligning choices with capabilities and market dynamics.",
-  "takeaways": [
-    "Define a sharp problem statement before choosing tools.",
-    "Use Five Forces to scan industry power; act on one force at a time.",
-    "Clarify 'where to play' (segment, geography, channel) vs 'how to win' (advantage).",
-    "Translate insights into 3\u20135 testable moves with owners and metrics.",
-    "Prefer robust choices over optimal guesses under uncertainty."
-  ],
-  "concepts": [
-    {
-      "term": "Trade-offs",
-      "definition": "Choosing what NOT to do to protect advantage.",
-      "related_frameworks": [
-        "Porter",
-        "Value Chain"
-      ]
-    },
-    {
-      "term": "JTBD",
-      "definition": "Customers 'hire' products to get a job done.",
-      "related_frameworks": [
-        "JTBD",
-        "Blue Ocean"
-      ]
-    },
-    {
-      "term": "Network Effects",
-      "definition": "Value increases as more users join.",
-      "related_frameworks": [
-        "Game Theory"
-      ]
-    }
-  ],
-  "framework_links": [
-    {
-      "framework": "Porter Five Forces",
-      "applies_when": "Industry structure shapes profits",
-      "red_flags": "Treating it as static"
-    },
-    {
-      "framework": "Blue Ocean",
-      "applies_when": "Crowded markets with price wars",
-      "red_flags": "Copycat differentiation without cost logic"
-    }
-  ],
-  "examples": [
-    {
-      "title": "B2B SaaS niche",
-      "setup": "Fragmented SMB market",
-      "application": "Pick vertical; build integrations",
-      "pitfall": "Too broad persona"
-    },
-    {
-      "title": "D2C wellness",
-      "setup": "Commoditized supplements",
-      "application": "Non-price differentiation via bundle + brand",
-      "pitfall": "High CAC ignored"
-    }
-  ],
   "flashcards": [
-    {
-      "id": "1",
-      "type": "basic",
-      "question": "Define strategy in one line.",
-      "answer": "A coherent set of choices about where to play and how to win.",
-      "tags": [
-        "core"
-      ],
-      "difficulty": 1
-    },
-    {
-      "id": "2",
-      "type": "cloze",
-      "question": "Five Forces scans industry ____.",
-      "answer": "structure and power dynamics",
-      "tags": [
-        "5F"
-      ],
-      "difficulty": 1
-    },
-    {
-      "id": "3",
-      "type": "framework",
-      "question": "Crowded market with price wars \u2014 which tool first?",
-      "answer": "Blue Ocean (value curve to resegment demand).",
-      "tags": [
-        "blue-ocean"
-      ],
-      "difficulty": 2
-    }
+    { "id": "f1", "question": "What is strategy?", "answer": "Choices about where to play and how to win.", "tags": ["core"] }
   ],
-  "exam_questions": [
-    {
-      "type": "short",
-      "prompt": "List two dimensions of 'where to play'.",
-      "expected_points": [
-        "Segment",
-        "Geography",
-        "Channel"
-      ]
-    },
-    {
-      "type": "mini_case",
-      "prompt": "Marketplace facing chicken-egg problem; advise first 3 moves.",
-      "expected_points": [
-        "Supply seeding",
-        "Subsidies",
-        "Narrow wedge"
-      ]
-    },
-    {
-      "type": "diagram",
-      "prompt": "Sketch a Five Forces map for digital banks.",
-      "expected_points": [
-        "Entrants",
-        "Suppliers",
-        "Buyers",
-        "Substitutes",
-        "Rivalry"
-      ]
-    }
+  "cloze": [
+    { "id": "c1", "text": "Porter's Five Forces scans industry ___.", "answer": "structure and power dynamics" }
   ],
-  "spaced_plan": [
-    {
-      "date": "2025-08-27",
-      "focus": "TL;DR + Takeaways review",
-      "est_minutes": 20
-    },
-    {
-      "date": "2025-08-29",
-      "focus": "Flashcards basic",
-      "est_minutes": 25
-    },
-    {
-      "date": "2025-09-02",
-      "focus": "Mini cases",
-      "est_minutes": 30
-    }
+  "mcq": [
+    { "id": "m1", "question": "Which framework is best for crowded markets with price wars?", "options": ["SWOT", "Blue Ocean", "PESTLE"], "answer": "Blue Ocean", "explanation": "It creates uncontested market space." }
   ],
-  "site_blocks": {
-    "hero": {
-      "headline": "Strategic Thinking, Memorized.",
-      "subhead": "Distill chats into flashcards, plans, and exam drills."
-    },
-    "sections": [
-      {
-        "title": "Distill",
-        "bullets": [
-          "TL;DR",
-          "Takeaways",
-          "Concepts"
-        ]
-      },
-      {
-        "title": "Practice",
-        "bullets": [
-          "Flashcards",
-          "Cloze",
-          "Framework match"
-        ]
-      },
-      {
-        "title": "Plan",
-        "bullets": [
-          "Spaced repetition",
-          "Weekly micro-plan"
-        ]
-      }
-    ]
-  }
+  "mini_cases": [
+    {
+      "id": "case1",
+      "scenario": "A new marketplace startup struggles with chicken-and-egg dynamics.",
+      "question": "What should they prioritize first?",
+      "solution_steps": ["Seed supply side", "Offer subsidies", "Narrow niche before scaling"]
+    }
+  ]
 }
