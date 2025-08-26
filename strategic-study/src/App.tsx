@@ -32,20 +32,30 @@ export default function App() {
   const [error, setError] = useState<string>("")
   const [mode, setMode] = useState<"flashcards" | "cloze" | "mcq" | "cases">("flashcards")
 
+const emptyData: Data = {
+  flashcards: [],
+  cloze: [],
+  mcq: [],
+  mini_cases: []
+}
+
 function load() {
   try {
     const parsed = JSON.parse(raw)
+
     setData({
-      flashcards: parsed.flashcards ?? [],
-      cloze: parsed.cloze ?? [],
-      mcq: parsed.mcq ?? [],
-      mini_cases: parsed.mini_cases ?? []
+      flashcards: Array.isArray(parsed.flashcards) ? parsed.flashcards : [],
+      cloze: Array.isArray(parsed.cloze) ? parsed.cloze : [],
+      mcq: Array.isArray(parsed.mcq) ? parsed.mcq : [],
+      mini_cases: Array.isArray(parsed.mini_cases) ? parsed.mini_cases : []
     })
     setError("")
   } catch (e: any) {
-    setError(e.message)
+    console.error(e)
+    setError("Invalid JSON: " + e.message)
   }
 }
+
 
 
   return (
