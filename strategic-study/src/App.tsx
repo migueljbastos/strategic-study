@@ -32,15 +32,21 @@ export default function App() {
   const [error, setError] = useState<string>("")
   const [mode, setMode] = useState<"flashcards" | "cloze" | "mcq" | "cases">("flashcards")
 
-  function load() {
-    try {
-      const parsed = JSON.parse(raw)
-      setData(parsed as Data)
-      setError("")
-    } catch (e: any) {
-      setError(e.message)
-    }
+function load() {
+  try {
+    const parsed = JSON.parse(raw)
+    setData({
+      flashcards: parsed.flashcards ?? [],
+      cloze: parsed.cloze ?? [],
+      mcq: parsed.mcq ?? [],
+      mini_cases: parsed.mini_cases ?? []
+    })
+    setError("")
+  } catch (e: any) {
+    setError(e.message)
   }
+}
+
 
   return (
     <div className="max-w-6xl mx-auto p-6 space-y-6">
